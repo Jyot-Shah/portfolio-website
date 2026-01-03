@@ -28,5 +28,4 @@
 - ESLint
 
 ## Notes
-- Public assets live in `public/` (favicons, profile image, resume PDF).
-- Update metadata in `index.html` if you change branding assets.
+- Public assets live in `public/` (icons, profile image, resume PDF).
