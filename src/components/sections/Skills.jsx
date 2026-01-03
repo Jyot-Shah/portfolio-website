@@ -24,7 +24,7 @@ const skillCategories = [
   {
     title: "Tools & Frameworks",
     color: "secondary",
-    skills: ["NumPy", "Pandas", "Matplotlib", "Git/GitHub", "Cloudinary", "Mapbox", "Google Colab", "Render"],
+    skills: ["NumPy", "Pandas", "Matplotlib", "Git/GitHub", "Cloudinary", "Mapbox", "Google Colab", "Render", "Vercel"],
   },
   {
     title: "Core Concepts",
