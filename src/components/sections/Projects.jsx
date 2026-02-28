@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Leaf, Home, Music, FileText, Database } from "lucide-react";
+import { ExternalLink, Github, Leaf, Home, Music, FileText, Database, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
@@ -16,6 +16,20 @@ const projects = [
     color: "primary",
   },
   {
+    title: "InfraGhost AI — Infrastructure Reality Verification System",
+    icon: Shield,
+    highlights: [
+      "Full-stack AI platform using Gemini Vision to analyze geotagged citizen submissions, computing a Ghost Score (0–100) for automated classification into InfraGhost, Partial, or Functional assets",
+      "Hardened Express.js backend with Helmet CSP, rate limiting, input validation, and XSS-safe rendering; integrated MongoDB Atlas for structured storage and real-time API access",
+      "Implemented client-side image compression to optimize AI token usage, reducing payload size by ~60% and improving response latency by ~35%",
+      "Built interactive Mapbox dashboard with color-coded markers, automated statistics aggregation, and executive PDF export for authority-level reporting",
+    ],
+    tech: ["Node.js", "Express.js", "Gemini Vision AI", "MongoDB", "Mapbox"],
+    github: "https://github.com/Jyot-Shah/InfraGhost-AI",
+    live: "https://infraghost-ai.onrender.com/",
+    color: "secondary",
+  },
+  {
     title: "WanderLust – Airbnb-Style Web App",
     icon: Home,
     highlights: [
@@ -26,7 +40,7 @@ const projects = [
     tech: ["Node.js", "Express.js", "MongoDB", "EJS", "Cloudinary", "Mapbox", "Passport.js", "Joi"],
     github: "https://github.com/Jyot-Shah/WanderLust",
     live: "https://wanderlust-hoyf.onrender.com/",
-    color: "secondary",
+    color: "accent",
   },
   {
     title: "Emotion-Based Song Recommendation Chatbot",
@@ -38,7 +52,7 @@ const projects = [
     ],
     tech: ["Python", "Flask", "NLP", "NLTK", "Chatterbot"],
     github: "https://github.com/Jyot-Shah/Song-Recommendation-Chatbot",
-    color: "accent",
+    color: "primary",
   },
   {
     title: "MoneyMatic - Financial Documents Classifier",
@@ -51,7 +65,7 @@ const projects = [
     ],
     tech: ["Node.js", "MongoDB", "Tesseract OCR", "Scikit-learn"],
     github: "https://github.com/Jyot-Shah/MoneyMatic",
-    color: "primary",
+    color: "secondary",
   },
   {
     title: "Employee Management System",
@@ -62,7 +76,7 @@ const projects = [
     ],
     tech: ["Python", "MySQL", "mysql-connector"],
     github: "https://github.com/Jyot-Shah/DBMS",
-    color: "secondary",
+    color: "accent",
   },
 ];
 
