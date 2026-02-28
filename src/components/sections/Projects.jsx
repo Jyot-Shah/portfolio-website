@@ -13,10 +13,11 @@ const projects = [
     ],
     tech: ["YOLOv11", "Flask", "Gemini 2.0 Flash", "Pillow", "Roboflow(Dataset)"],
     github: "https://github.com/Jyot-Shah/Plant-Leaf-Disease-Detection",
+    live: "https://plant-leaf-disease-detection-hjng.onrender.com",
     color: "primary",
   },
   {
-    title: "InfraGhost AI — Infrastructure Reality Verification System",
+    title: "InfraGhost AI - Infrastructure Reality Verification System",
     icon: Shield,
     highlights: [
       "Full-stack AI platform using Gemini Vision to analyze geotagged citizen submissions, computing a Ghost Score (0–100) for automated classification into InfraGhost, Partial, or Functional assets",
@@ -30,7 +31,7 @@ const projects = [
     color: "secondary",
   },
   {
-    title: "WanderLust – Airbnb-Style Web App",
+    title: "WanderLust - Airbnb-Style Web App",
     icon: Home,
     highlights: [
       "Developed a full-stack Airbnb clone using Node.js, Express.js, MongoDB, and EJS templates, implementing secure authentication (Passport.js), session management, and complete CRUD operations for listings and reviews",
