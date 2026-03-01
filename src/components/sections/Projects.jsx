@@ -13,7 +13,6 @@ const projects = [
     ],
     tech: ["YOLOv11", "Flask", "Gemini 2.5 Flash", "Pillow", "Roboflow(Dataset)"],
     github: "https://github.com/Jyot-Shah/Plant-Leaf-Disease-Detection",
-    live: "https://plant-leaf-disease-detection-hjng.onrender.com",
     color: "primary",
   },
   {
