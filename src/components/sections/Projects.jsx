@@ -9,9 +9,9 @@ const projects = [
     highlights: [
       "Built end-to-end detection using custom-trained YOLOv11 on augmented PlantDoc dataset",
       "Achieved ~85% validation accuracy with optimized preprocessing and real-time inference deployed via Flask",
-      "Integrated Gemini 2.0 Flash chatbot for context-aware treatment recommendations",
+      "Integrated Gemini 2.5 Flash chatbot for context-aware treatment recommendations",
     ],
-    tech: ["YOLOv11", "Flask", "Gemini 2.0 Flash", "Pillow", "Roboflow(Dataset)"],
+    tech: ["YOLOv11", "Flask", "Gemini 2.5 Flash", "Pillow", "Roboflow(Dataset)"],
     github: "https://github.com/Jyot-Shah/Plant-Leaf-Disease-Detection",
     live: "https://plant-leaf-disease-detection-hjng.onrender.com",
     color: "primary",
