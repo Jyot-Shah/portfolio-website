@@ -31,7 +31,7 @@ export const About = () => {
                 to production, building clean APIs, and solving problems that have tangible impact.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Currently maintaining a <span className="text-foreground font-medium">9.25 CGPA</span> while 
+                Currently maintaining a <span className="text-foreground font-medium">9.21 CGPA</span> while 
                 shipping projects, earning certifications, and consistently landing on the 'Dean's List' for
                 academic excellence.
               </p>

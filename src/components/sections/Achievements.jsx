@@ -10,7 +10,7 @@ const achievements = [
   },
   {
     icon: GraduationCap,
-    title: "9.25 CGPA",
+    title: "9.21 CGPA",
     description: "B.Tech. in Computer Science & Engineering with AI/ML specialization at Manipal University Jaipur (2023-2027).",
     color: "secondary",
   },
@@ -60,6 +60,11 @@ const certifications = [
   {
     title: "Database Programming with SQL",
     issuer: "Oracle Academy",
+    icon: BookOpen,
+  },
+  {
+    title: "Deep Learning - IIT Ropar",
+    issuer: "IIT Madras, NPTEL",
     icon: BookOpen,
   },
 ];
