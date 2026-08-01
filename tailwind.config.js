@@ -6,7 +6,7 @@ export default {
     "./pages/**/*.{js,jsx}",
     "./components/**/*.{js,jsx}",
     "./app/**/*.{js,jsx}",
-    "./src/**/*.{js,jsx}"
+    "./src/**/*.{js,jsx}",
   ],
   prefix: "",
   theme: {
@@ -66,15 +66,14 @@ export default {
           secondary: "hsl(var(--glow-secondary))",
           accent: "hsl(var(--glow-accent))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        tactical: {
+          teal: "#00F5D4",
+          cyan: "#00D9FF",
+          purple: "#8B5CF6",
+          amber: "#FFC857",
+          oled: "#000000",
+          void: "#0a0a0a",
+          panel: "#111111",
         },
       },
       borderRadius: {
@@ -95,11 +94,29 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "radar-sweep": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        glitch: {
+          "0%, 100%": { opacity: "1", transform: "translate(0)" },
+          "20%": { opacity: "0.8", transform: "translate(-2px, 2px)" },
+          "40%": { opacity: "0.9", transform: "translate(-2px, -2px)" },
+          "60%": { opacity: "1", transform: "translate(2px, 2px)" },
+          "80%": { opacity: "0.9", transform: "translate(2px, -2px)" },
+        },
+        scanline: {
+          "0%": { transform: "translateY(-100%)" },
+          "100%": { transform: "translateY(100vh)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "spin-slow": "spin-slow 3s linear infinite",
+        radar: "radar-sweep 4s linear infinite",
+        glitch: "glitch 0.2s ease-in-out",
+        scanline: "scanline 8s linear infinite",
       },
     },
   },
