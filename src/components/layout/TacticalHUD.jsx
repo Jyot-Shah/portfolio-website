@@ -16,6 +16,7 @@ import {
 export const TacticalHUD = ({ children }) => {
   const location = useLocation();
   const [time, setTime] = useState("");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -124,10 +125,13 @@ export const TacticalHUD = ({ children }) => {
           })}
         </div>
 
-        {/* Mobile menu toggle placeholder */}
-        <div className="lg:hidden text-tactical-teal font-mono text-xs border border-tactical-teal/30 px-3 py-1">
-          MENU
-        </div>
+        {/* Mobile menu toggle */}
+        <button
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          className="lg:hidden text-tactical-teal font-mono text-xs border border-tactical-teal/30 hover:bg-tactical-teal/10 px-3 py-1 transition-colors focus:outline-none"
+        >
+          {isMobileMenuOpen ? "CLOSE" : "MENU"}
+        </button>
 
         {/* System Status */}
         <div className="hidden sm:flex items-center gap-2 text-[10px] font-mono text-tactical-cyan uppercase">
@@ -138,6 +142,39 @@ export const TacticalHUD = ({ children }) => {
           SYS: ONLINE
         </div>
       </nav>
+
+      {/* Mobile Navigation Dropdown */}
+      {isMobileMenuOpen && (
+        <div className="fixed top-[62px] left-0 w-full bg-black/95 backdrop-blur-md border-b border-tactical-teal/30 z-30 lg:hidden flex flex-col p-4 animate-fade-in shadow-[0_10px_30px_rgba(0,0,0,0.8)]">
+          <div className="text-tactical-teal/50 font-mono text-[10px] tracking-widest uppercase mb-3 flex items-center gap-2">
+            <span className="w-1.5 h-1.5 bg-tactical-teal rounded-full animate-pulse-glow" />
+            Select Routing Vector
+          </div>
+          <div className="flex flex-col gap-2">
+            {navItems.map((item, idx) => {
+              const isActive =
+                location.pathname === item.path ||
+                (item.path !== "/" && location.pathname.startsWith(item.path));
+              return (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`flex items-center gap-3 px-4 py-3 text-xs font-mono font-medium border transition-all ${
+                    isActive
+                      ? "border-tactical-teal bg-tactical-teal/10 text-tactical-teal shadow-[0_0_10px_rgba(0,245,212,0.3)]"
+                      : "border-white/5 text-white/60 hover:text-white hover:border-white/20 bg-white/5"
+                  }`}
+                  style={{ animationDelay: `${idx * 50}ms` }}
+                >
+                  {item.icon}
+                  {item.label}
+                </Link>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       {/* Main Content Area */}
       <main className="relative z-10 pt-[88px] min-h-screen pb-20">
