@@ -87,17 +87,17 @@ export const TacticalHUD = ({ children }) => {
       <nav className="fixed top-0 left-0 w-full z-40 bg-black/80 backdrop-blur-md border-b-2 border-tactical-teal/30 px-6 py-3 flex items-center justify-between">
         {/* Brand / Radar */}
         <div className="flex items-center gap-4">
-          <div className="relative flex items-center justify-center overflow-hidden">
+          <Link
+            to="/"
+            className="relative flex items-center justify-center overflow-hidden hover:opacity-80 transition-opacity"
+          >
             <img
-              src="/icon.png"
-              alt="JS Icon"
-              className="w-7 h-7 animate-pulse-glow"
+              src="/logo.png"
+              alt="JS Logo"
+              className="h-8 md:h-10 w-auto object-contain animate-fade-in"
             />
-          </div>
+          </Link>
           <div className="flex flex-col uppercase font-mono tracking-widest text-xs hidden sm:flex">
-            <span className="text-tactical-teal font-bold animate-glitch">
-              JSOS
-            </span>
             <span className="text-white/50 text-[10px]">{time} IST</span>
           </div>
         </div>
