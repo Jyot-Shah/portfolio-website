@@ -157,7 +157,8 @@ export default function Home() {
         {/* Main Headline */}
         <h1 className="text-3xl md:text-5xl lg:text-7xl font-black font-heading tracking-tighter mb-6 uppercase min-h-[80px] md:min-h-[120px] flex items-center justify-center w-full">
           <span
-            className={`inline-block min-w-full ${titles[currentTitleIdx].colorClass} px-4 py-2 drop-shadow-md`}
+            className={`inline-block min-w-full ${titles[currentTitleIdx].colorClass} px-4 py-2 drop-shadow-lg animate-pulse`}
+            style={{ animationDuration: "2s" }}
           >
             {titles[currentTitleIdx].text}
           </span>

@@ -29,7 +29,7 @@ const achievements = [
 ];
 
 const certifications = [
-  { title: "IBM AI Engineering", issuer: "Coursera" },
+  { title: "IBM AI Engineering Professional Certificate", issuer: "Coursera" },
   { title: "MERN Stack + DSA (Sigma 8.0)", issuer: "Apna College" },
   { title: "Introduction to ML", issuer: "IIT Madras, NPTEL" },
   { title: "Design & Analysis of Algorithms", issuer: "IIT Madras, NPTEL" },
