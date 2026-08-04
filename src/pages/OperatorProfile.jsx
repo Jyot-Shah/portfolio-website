@@ -43,7 +43,7 @@ export default function OperatorProfile() {
             <div className="absolute inset-0 bg-grid-background opacity-20" />
             <div className="absolute inset-x-0 h-0.5 bg-tactical-teal/50 animate-scanline shadow-[0_0_10px_#00F5D4]" />
             {/* Corner crosshairs */}
-            <Crosshair className="absolute text-tactical-teal/20 w-32 h-32 stroke-1 absolute items-center justify-center m-auto inset-0" />
+            <Crosshair className="absolute text-tactical-teal/20 w-32 h-32 stroke-1 items-center justify-center m-auto inset-0" />
 
             <div className="relative z-10 text-center flex flex-col items-center">
               <img
@@ -78,7 +78,7 @@ export default function OperatorProfile() {
               </li>
               <li className="flex justify-between border-b border-white/10 pb-1">
                 <span className="text-tactical-teal/60">CGPA:</span>
-                <span className="text-white uppercase font-bold text-tactical-amber">
+                <span className="uppercase font-bold text-tactical-amber">
                   9.21
                 </span>
               </li>
