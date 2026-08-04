@@ -141,7 +141,7 @@ export default function MissionControl() {
         <div>
           <div className="text-white/60 font-mono text-[10px] tracking-widest uppercase mb-1 flex items-center gap-2">
             <Target className="w-3 h-3 text-tactical-amber animate-pulse" />
-            Tactical Operations Board
+            Tactical Projects
           </div>
           <h1 className="text-4xl md:text-5xl font-black font-heading text-white tracking-widest uppercase">
             Mission Control

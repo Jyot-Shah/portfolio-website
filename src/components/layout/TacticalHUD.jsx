@@ -11,6 +11,7 @@ import {
   Hexagon,
   Terminal,
   Activity,
+  Award,
 } from "lucide-react";
 
 export const TacticalHUD = ({ children }) => {
@@ -38,6 +39,11 @@ export const TacticalHUD = ({ children }) => {
       path: "/operator",
       label: "OPERATOR",
       icon: <User className="w-4 h-4" />,
+    },
+    {
+      path: "/service-record",
+      label: "SERVICE RECORD",
+      icon: <Award className="w-4 h-4" />,
     },
     {
       path: "/loadout",
@@ -97,7 +103,7 @@ export const TacticalHUD = ({ children }) => {
               className="h-8 md:h-10 w-auto object-contain animate-fade-in"
             />
           </Link>
-          <div className="flex flex-col uppercase font-mono tracking-widest text-xs hidden sm:flex">
+          <div className="hidden sm:flex flex-col uppercase font-mono tracking-widest text-xs">
             <span className="text-white/50 text-[10px]">{time} IST</span>
           </div>
         </div>
@@ -194,7 +200,7 @@ export const TacticalHUD = ({ children }) => {
             Jyot Shah
           </a>
         </div>
-        <div className="flex items-center gap-4 hidden sm:flex">
+        <div className="hidden sm:flex items-center gap-4">
           <span className="text-tactical-teal animate-pulse">
             SYSTEM OPTIMAL
           </span>

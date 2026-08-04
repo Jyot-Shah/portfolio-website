@@ -8,7 +8,7 @@ export default function MissionLogs() {
         <div>
           <div className="text-tactical-amber font-mono text-[10px] tracking-widest uppercase mb-1 flex items-center gap-2">
             <ScanEye className="w-3 h-3 text-tactical-amber text-pulse" />
-            Archive Access
+            Resume Archive
           </div>
           <h1 className="text-4xl md:text-5xl font-black font-heading text-white tracking-widest uppercase">
             Mission Logs
@@ -53,7 +53,7 @@ export default function MissionLogs() {
           <div className="w-full lg:w-2/5 flex flex-col gap-6">
             <h3 className="font-heading text-2xl text-white uppercase tracking-widest mb-2 border-l-2 border-tactical-amber pl-3 flex items-center gap-2">
               <FileText className="w-6 h-6 text-tactical-amber" />
-              Service Record View
+              Resume
             </h3>
             <p className="font-mono text-white/50 text-sm leading-relaxed mb-6 text-justify">
               Access granted to full operational service record. Document

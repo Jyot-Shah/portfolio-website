@@ -106,8 +106,8 @@ export default {
           "80%": { opacity: "0.9", transform: "translate(2px, -2px)" },
         },
         scanline: {
-          "0%": { transform: "translateY(-100%)" },
-          "100%": { transform: "translateY(100vh)" },
+          "0%": { top: "0%", transform: "translateY(-100%)" },
+          "100%": { top: "100%", transform: "translateY(0)" },
         },
       },
       animation: {

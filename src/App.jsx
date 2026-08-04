@@ -13,8 +13,8 @@ import MissionControl from "./pages/MissionControl.jsx";
 import MissionLogs from "./pages/MissionLogs.jsx";
 import AchievementVault from "./pages/AchievementVault.jsx";
 import CommandTerminal from "./pages/CommandTerminal.jsx";
-
 import ResearchLab from "./pages/ResearchLab.jsx";
+import OperationalHistory from "./pages/OperationalHistory.jsx";
 
 const queryClient = new QueryClient();
 
@@ -33,7 +33,7 @@ const App = () => (
             <Route path="/research" element={<ResearchLab />} />
             <Route path="/logs" element={<MissionLogs />} />
             <Route path="/vault" element={<AchievementVault />} />
-
+            <Route path="/service-record" element={<OperationalHistory />} />
             <Route path="/terminal" element={<CommandTerminal />} />
 
             <Route path="*" element={<NotFound />} />
