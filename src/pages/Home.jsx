@@ -171,14 +171,52 @@ export default function Home() {
         </p>
 
         {/* Primary CTA & Socials */}
-        <div className="flex flex-col items-center gap-8 mb-8">
-          <a href="/operator" className="relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-tactical-teal to-tactical-cyan opacity-40 blur transition duration-500 group-hover:opacity-100 animate-pulse-glow" />
-            <div className="relative border border-tactical-teal bg-black px-10 py-4 font-mono font-bold tracking-widest text-tactical-teal group-hover:text-black group-hover:bg-tactical-teal transition-all flex items-center gap-3 uppercase">
-              <span className="text-lg">Commence Operation</span>
-              <div className="w-1.5 h-1.5 bg-current rounded-full" />
-            </div>
-          </a>
+        <div className="flex flex-col items-center gap-8 mb-8 w-full">
+          <div className="flex flex-col md:flex-row items-stretch justify-center gap-6 md:gap-16 w-full">
+            <a
+              href="/mission-control"
+              className="relative group order-2 md:order-1 flex"
+            >
+              <div className="absolute -inset-1 bg-gradient-to-r from-tactical-cyan to-tactical-cyan opacity-30 blur transition duration-500 group-hover:opacity-100 animate-pulse-glow" />
+              <div className="relative h-full w-full border border-tactical-cyan bg-black px-6 py-2.5 md:px-8 md:py-3 font-mono font-bold tracking-widest text-tactical-cyan group-hover:text-black group-hover:bg-tactical-cyan transition-all flex flex-col items-center justify-center uppercase min-w-[160px]">
+                <div className="flex items-center gap-2">
+                  <span className="text-sm md:text-base leading-none">
+                    MISSIONS
+                  </span>
+                  <div className="w-1.5 h-1.5 bg-current rounded-full opacity-60" />
+                </div>
+                <span className="text-[10px] opacity-80 normal-case tracking-normal mt-0.5 leading-none">
+                  (View Projects)
+                </span>
+              </div>
+            </a>
+
+            <a
+              href="/operator"
+              className="relative group order-1 md:order-2 flex"
+            >
+              <div className="absolute -inset-1 bg-gradient-to-r from-tactical-teal to-tactical-teal opacity-40 blur transition duration-500 group-hover:opacity-100 animate-pulse-glow" />
+              <div className="relative h-full w-full border border-tactical-teal bg-black px-10 py-4 font-mono font-bold tracking-widest text-tactical-teal group-hover:text-black group-hover:bg-tactical-teal transition-all flex items-center gap-3 uppercase">
+                <span className="text-lg">Commence Operation</span>
+                <div className="w-1.5 h-1.5 bg-current rounded-full" />
+              </div>
+            </a>
+
+            <a href="/logs" className="relative group order-3 md:order-3 flex">
+              <div className="absolute -inset-1 bg-gradient-to-r from-tactical-amber to-tactical-amber opacity-30 blur transition duration-500 group-hover:opacity-100 animate-pulse-glow" />
+              <div className="relative h-full w-full border border-tactical-amber bg-black px-6 py-2.5 md:px-8 md:py-3 font-mono font-bold tracking-widest text-tactical-amber group-hover:text-black group-hover:bg-tactical-amber transition-all flex flex-col items-center justify-center uppercase min-w-[160px]">
+                <div className="flex items-center gap-2">
+                  <span className="text-sm md:text-base leading-none">
+                    LOGS
+                  </span>
+                  <div className="w-1.5 h-1.5 bg-current rounded-full opacity-60" />
+                </div>
+                <span className="text-[10px] opacity-80 normal-case tracking-normal mt-0.5 leading-none">
+                  (View Resume)
+                </span>
+              </div>
+            </a>
+          </div>
           <div className="flex items-center gap-4">
             <a
               href="https://github.com/Jyot-Shah"
